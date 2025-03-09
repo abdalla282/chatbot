@@ -42,7 +42,7 @@ client.on("messageCreate", async (message) => {
         const response = await fetch(API_URL, {
             method: "POST",
             headers: {
-                "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY.replace("qqqqq", "51881ef0e54a0fbab7c4d3ee9bcbdaf00d688fd")}`,
+                "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
@@ -68,4 +68,4 @@ client.on("messageCreate", async (message) => {
 });
 
 // Log in to Discord using the bot token
-client.login(process.env.DISCORD_TOKEN.replace("discord", "Xq0svpu4RyIeeLypHcOOxBtpsyl-U"));
+client.login(process.env.DISCORD_TOKEN);
